@@ -14,7 +14,7 @@ jobs:
         github-token: ${{ secrets.TOKEN }}
         script: |
           await github.rest.actions.createWorkflowDispatch({
-            owner: '${{secrets.USERNAME}}',
+            owner: 'SpiddyBoy',
             repo: '${{secrets.PRIVATE_REPO}}',
             workflow_id: 'repo-sync.yml',
             ref: 'main'

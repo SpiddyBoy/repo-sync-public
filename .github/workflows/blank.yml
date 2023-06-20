@@ -15,7 +15,7 @@ jobs:
         script: |
           await github.rest.actions.createWorkflowDispatch({
             owner: 'SpiddyBoy',
-            repo: '${{secrets.PRIVATE_REPO}}',
+            repo: 'repo-sync-private',
             workflow_id: 'repo-sync.yml',
             ref: 'main'
           })
